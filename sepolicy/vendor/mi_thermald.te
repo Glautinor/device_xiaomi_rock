@@ -26,3 +26,4 @@ allow mi_thermald {
 set_prop(mi_thermald, vendor_thermal_normal_prop)
 
 allow mi_thermald sysfs_leds:dir search;
+allow mi_thermald sysfs_leds:file read;

@@ -4,7 +4,7 @@ ro.vendor.mtk_aal_support=1
 # Audio
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
-ro.config.vc_call_vol_steps=11
+ro.config.vc_call_vol_steps=7
 ro.vendor.audio_para_version=L19A-T-Audiopara-V03-20221212
 ro.vendor.mtk_audio_alac_support=1
 ro.vendor.mtk_audio_ape_support=1

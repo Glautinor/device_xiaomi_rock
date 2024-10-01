@@ -7,3 +7,6 @@ type camera_persist_file, file_type;
 
 # Panel info
 type version_info, fs_type, sysfs_type;
+
+# Audio
+type vendor_sia_mode, fs_type, sysfs_type;

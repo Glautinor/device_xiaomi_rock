@@ -106,3 +106,6 @@ genfscon sysfs /devices/platform/soc/soc:extcon_usb/extcon u:object_r:sysfs_extc
 # Graphics
 genfscon sysfs /devices/platform/soc/13000000.mali u:object_r:sysfs_gpu:s0
 
+# Audio
+genfscon sysfs /devices/platform/11f00000.i2c6/i2c-6/6-0058/vmax u:object_r:vendor_sia_mode:s0
+genfscon sysfs /devices/platform/soc/1101a000.i2c/i2c-6/6-0058/vmax u:object_r:vendor_sia_mode:s0

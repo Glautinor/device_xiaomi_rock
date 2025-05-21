@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common ProjectInfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from rock device
 $(call inherit-product, device/xiaomi/rock/device.mk)
@@ -17,14 +17,29 @@ $(call inherit-product, device/xiaomi/rock/device.mk)
 # Disable Eppe
 TARGET_DISABLE_EPPE := true
 
+PRODUCT_NAME := infinity_rock
 PRODUCT_DEVICE := rock
-PRODUCT_NAME := lineage_rock
+PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi 11 Prime
-PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="missi_phone_global_ext4-user 14 UP1A.231005.007 V816.0.12.0.ULUMIXM release-keys" \
     BuildFingerprint=POCO/stone_p_global/stone:13/TP1A.220624.014/V816.0.12.0.ULUMIXM:user/release-keys
+#    SystemName=ruby_global \
+#    SystemDevice=ruby
+
+# ProjectInfinityX specific
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := Devloper
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_BLUR := false
+TARGET_HAS_UDFPS := false
+TARGET_SHIPS_FULL_GAPPS := false
+TARGET_BUILD_GOOGLE_TELEPHONY := false
+USE_MOTO_CALCULATOR := false
+WITH_GAPPS := false

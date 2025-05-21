@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_rock.mk
+    $(LOCAL_DIR)/infinity_rock.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_rock-user \
-    lineage_rock-userdebug \
-    lineage_rock-eng
+    infinity_rock-user \
+    infinity_rock-userdebug \
+    infinity_rock-eng

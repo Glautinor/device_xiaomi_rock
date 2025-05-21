@@ -42,3 +42,10 @@ ro.sys.usb.mtp.whql.enable=0
 ro.sys.usb.storage.type=mtp
 ro.sys.usb.bicr=no
 ro.sys.usb.charging.only=yes
+
+#InfinityX
+ro.product.marketname=Redmi 11 Prime
+ro.infinity.soc=MediaTek Helio G99
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1080 x 2408, 90 Hz
+ro.infinity.camera=50MP + 2MP + 2MP

@@ -14,6 +14,10 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from rock device
 $(call inherit-product, device/xiaomi/rock/device.mk)
 
+# ---- MindTheGapps integration ----
+# Include GApps for arm64 devices:
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+
 # Disable Eppe
 TARGET_DISABLE_EPPE := true
 

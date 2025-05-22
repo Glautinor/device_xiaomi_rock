@@ -76,9 +76,6 @@ TARGET_NO_KERNEL_OVERRIDE := true
 
 # Workaround to make lineage's soong generator work
 TARGET_KERNEL_SOURCE := device/xiaomi/rock-kernel/kernel-headers
-#Infinty kernel fix
-#TARGET_KERNEL_ARCH := arm64
-#TARGET_KERNEL_HEADER_ARCH := arm64
 
 LOCAL_KERNEL := $(KERNEL_PATH)/Image.gz
 PRODUCT_COPY_FILES += \

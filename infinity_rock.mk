@@ -4,16 +4,14 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 # ProjectInfinityX Gapps
-WITH_GAPPS := true
-TARGET_SHIPS_GOOGLE_DIALER := true
-TARGET_BUILD_GOOGLE_TELEPHONY := true
-TARGET_SHIPS_FULL_GAPPS := false
+#WITH_GAPPS := true
+#TARGET_SHIPS_GOOGLE_DIALER := true
+#TARGET_SHIPS_FULL_GAPPS := false
 
 # ProjectInfinityX Vanilla
-#WITH_GAPPS := false
-#TARGET_SHIPS_GOOGLE_DIALER := false
-#TARGET_BUILD_GOOGLE_TELEPHONY := false
-#TARGET_SHIPS_FULL_GAPPS := false
+WITH_GAPPS := false
+TARGET_SHIPS_GOOGLE_DIALER := false
+TARGET_SHIPS_FULL_GAPPS := false
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
@@ -51,4 +49,3 @@ TARGET_HAS_UDFPS := false
 USE_MOTO_CALCULATOR := true
 
 #END
-

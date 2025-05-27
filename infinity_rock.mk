@@ -35,8 +35,8 @@ PRODUCT_MODEL := Redmi 11 Prime
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="missi_phone_global_ext4-user 14 UP1A.231005.007 V816.0.12.0.ULUMIXM release-keys" \
-    BuildFingerprint=POCO/stone_p_global/stone:13/TP1A.220624.014/V816.0.12.0.ULUMIXM:user/release-keys
+    BuildDesc="missi_phone_global_ext4-user 14 UP1A.231005.007 V816.0.8.0.ULUINXM release-keys" \
+    BuildFingerprint=Redmi/rock_in/rock:13/TP1A.220624.014/V816.0.8.0.ULUINXM:user/release-keys
 
 # ProjectInfinityX specific
 INFINITY_BUILD_TYPE := UNOFFICIAL

@@ -5,7 +5,7 @@ on init
     write /dev/cpuset/background/cpus 2-3
     write /dev/cpuset/system-background/cpus 2-4
     write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/restricted/cpus 0-3
+    write /dev/cpuset/restricted/cpus 0-2
 
     # VM Tweaks
     write /proc/sys/vm/dirty_writeback_centisecs 250

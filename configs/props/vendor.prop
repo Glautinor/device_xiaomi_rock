@@ -150,13 +150,8 @@ ro.lmk.downgrade_pressure=100
 ro.lmk.kill_timeout_ms=100
 ro.lmk.kill_heaviest_task=false
 ro.lmk.use_minfree_levels=true
-
-# ════════════════════════════════════════
-# Memory management
-# ════════════════════════════════════════
-persist.sys.minfree_def=73728,92160,110592,340000,510000,645120
-persist.sys.minfree_6g=73728,92160,110592,340000,1282868,1677312
-persist.sys.minfree_8g=73728,92160,110592,340000,1677312,2064384
+persist.sys.minfree_def=4096,5120,8192,24576,32768,47360
+persist.sys.minfree_6g=4096,5120,8192,32768,56320,71680
 
 # ════════════════════════════════════════
 # Media

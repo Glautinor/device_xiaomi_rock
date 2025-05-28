@@ -115,7 +115,6 @@ ro.vendor.mtk_ovl_bringup=0
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
-debug.sf.layer_caching_active_layer_timeout_ms=1000
 
 # ════════════════════════════════════════
 # GPS
@@ -289,7 +288,8 @@ ro.vendor.mtk.sensor.support=yes
 # ════════════════════════════════════════
 # SurfaceFlinger & HWUI
 # ════════════════════════════════════════
-debug.sf.auto_latch_unsignaled=0
+debug.sf.auto_latch_unsignaled=1 #allows latching of unsignaled buffers when only a single layer is updating
+debug.sf.layer_caching_active_layer_timeout_ms=1000
 debug.sf.disable_client_composition_cache=0
 debug.sf.enable_gl_backpressure=0
 debug.sf.enable_hwc_vds=1

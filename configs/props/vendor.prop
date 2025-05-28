@@ -23,7 +23,7 @@ ro.vendor.mtk_hifiaudio_support=1
 # ════════════════════════════════════════
 ro.bluetooth.a2dp_offload.supported=true
 persist.bluetooth.a2dp_offload.cap=sbc-aac
-persist.bluetooth.a2dp_offload.disabled=true
+persist.bluetooth.a2dp_offload.disabled=false #Enables A2DP hardware offload
 ro.vendor.bt.platform=connac1x
 ro.vendor.mtk.bt_sap_enable=true
 ro.vendor.audio.bluetooth.support.misound=false

@@ -1,4 +1,6 @@
+# ════════════════════════════════════════
 # Bluetooth
+# ════════════════════════════════════════
 bluetooth.device.class_of_device=90,1,16
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.avrcp.target.enabled=true
@@ -14,7 +16,9 @@ bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
 
+# ════════════════════════════════════════
 # Power-saving props
+# ════════════════════════════════════════
 ro.vendor.use_data_netmgrd=true
 ro.vold.umsdirtyratio=20
 ro.ril.disable.power.collapse=0

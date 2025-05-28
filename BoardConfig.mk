@@ -203,3 +203,6 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Inherit the proprietary version
 include vendor/xiaomi/rock/BoardConfigVendor.mk
+
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true

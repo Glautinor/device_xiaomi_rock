@@ -290,7 +290,7 @@ ro.vendor.mtk.sensor.support=yes
 # SurfaceFlinger & HWUI
 # ════════════════════════════════════════
 debug.sf.auto_latch_unsignaled=0
-debug.sf.disable_client_composition_cache=1
+debug.sf.disable_client_composition_cache=0
 debug.sf.enable_gl_backpressure=0
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=1 #Use GPU for hardware acceleration
@@ -308,9 +308,10 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.set_idle_timer_ms=1000
 ro.surface_flinger.set_touch_timer_ms=1000
 ro.surface_flinger.set_display_power_timer_ms=1000
-ro.surface_flinger.supports_background_blur=0
 ro.surface_flinger.uclamp.min=256
 ro.surface_flinger.wcg_composition_dataspace=143261696
+# ═══════════════ Blur Handler ═══════════════
+ro.surface_flinger.supports_background_blur=0
 
 # ════════════════════════════════════════
 # Storage

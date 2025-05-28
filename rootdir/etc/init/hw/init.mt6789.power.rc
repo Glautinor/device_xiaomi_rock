@@ -2,8 +2,8 @@ on init
     # Setup final cpuset
     write /dev/cpuset/foreground/cpus 0-5
     write /dev/cpuset/foreground_window/cpus 0-5
-    write /dev/cpuset/background/cpus 2-3
-    write /dev/cpuset/system-background/cpus 2-4
+    write /dev/cpuset/background/cpus 0-1
+    write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/restricted/cpus 0-2
 
@@ -28,13 +28,13 @@ on init
 
 ## Utilization Clamping
     # Tuning
-    write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
+    write /proc/sys/kernel/sched_util_clamp_min_rt_default 128
     write /proc/sys/kernel/sched_util_clamp_min 128
 
     # Real-Time tasks
     write /dev/cpuctl/rt/cpu.uclamp.latency_sensitive 1
     write /dev/cpuctl/rt/cpu.uclamp.max max
-    write /dev/cpuctl/rt/cpu.uclamp.min 0
+    write /dev/cpuctl/rt/cpu.uclamp.min 128
     write /dev/cpuctl/rt/cpu.shares 20480
 
     # Background tasks for best efficiency

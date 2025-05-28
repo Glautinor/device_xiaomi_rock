@@ -1,7 +1,11 @@
+# ════════════════════════════════════════
 # AAL
+# ════════════════════════════════════════
 ro.vendor.mtk_aal_support=1
 
+# ════════════════════════════════════════
 # Audio
+# ════════════════════════════════════════
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 ro.vendor.audio.gain.support=true
@@ -14,7 +18,9 @@ ro.vendor.mtk_audio_ape_support=1
 ro.vendor.mtk_audio_tuning_tool_ver=V1
 ro.vendor.mtk_hifiaudio_support=1
 
+# ════════════════════════════════════════
 # Bluetooth
+# ════════════════════════════════════════
 ro.bluetooth.a2dp_offload.supported=true
 persist.bluetooth.a2dp_offload.cap=sbc-aac
 persist.bluetooth.a2dp_offload.disabled=true
@@ -24,7 +30,9 @@ ro.vendor.audio.bluetooth.support.misound=false
 vendor.bluetooth.ldac.abr=true
 ro.vendor.bluetooth.defaultabsvol=false
 
+# ════════════════════════════════════════
 # Camera
+# ════════════════════════════════════════
 camera.disable_zsl_mode=1
 persist.vendor.camera3.pipeline.bufnum.base.imgo=4
 persist.vendor.camera3.pipeline.bufnum.base.lcso=4
@@ -48,10 +56,14 @@ vendor.camera.mdp.cz.enable=1
 vendor.camera.mdp.dre.enable=1
 vendor.mtk.camera.app.fd.video=1
 
+# ════════════════════════════════════════
 # Charger
+# ════════════════════════════════════════
 ro.vendor.mtk_fast_charging_support=1
 
+# ════════════════════════════════════════
 # Connsys
+# ════════════════════════════════════════
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0
 persist.vendor.connsys.fm_chipid=mt6631_6635
@@ -60,25 +72,37 @@ ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
 ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
 
+# ════════════════════════════════════════
 # Crypto
+# ════════════════════════════════════════
 ro.crypto.volume.filenames_mode=aes-256-cts
 
+# ════════════════════════════════════════
 # DRM
+# ════════════════════════════════════════
 drm.service.enabled=true
 ro.vendor.mtk_widevine_drm_l1_support=1
 
+# ════════════════════════════════════════
 # Fingerprint
+# ════════════════════════════════════════
 persist.vendor.fingerprint.type=side
 persist.vendor.fingerprint.sensor_modules=fpc,goodix
 persist.vendor.fingerprint.sensor_location=1080|915|145|local:0
 
+# ════════════════════════════════════════
 # FM
+# ════════════════════════════════════════
 ro.vendor.fm.platform=mt6631_6635
 
+# ════════════════════════════════════════
 # Gatekeeper
+# ════════════════════════════════════════
 ro.hardware.gatekeeper=beanpod
 
+# ════════════════════════════════════════
 # Graphics
+# ════════════════════════════════════════
 debug.graphics.game_default_frame_rate.disabled=true
 graphics.gpu.profiler.support=true
 ro.hardware.egl=meow
@@ -93,17 +117,23 @@ ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
 debug.sf.layer_caching_active_layer_timeout_ms=1000
 
+# ════════════════════════════════════════
 # GPS
+# ════════════════════════════════════════
 ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
 ro.vendor.gps.chrdev=gps_drv_stp
 ro.vendor.mtk_agps_app=1
 ro.vendor.mtk_gps_support=1
 ro.vendor.mtk_log_hide_gps=1
 
+# ════════════════════════════════════════
 # Keymaster
+# ════════════════════════════════════════
 ro.hardware.kmsetkey=beanpod
 
+# ════════════════════════════════════════
 # LMKD
+# ════════════════════════════════════════
 ro.lmk.psi_complete_stall_ms=35
 ro.lmk.psi_partial_stall_ms=35
 ro.lmk.swap_free_low_percentage=10
@@ -121,7 +151,9 @@ ro.lmk.use_minfree_levels=true
 ro.lmk.log_stats=true
 ro.lmk.low=1001
 
+# ════════════════════════════════════════
 # Media
+# ════════════════════════════════════════
 debug.stagefright.c2inputsurface=-1
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
@@ -132,26 +164,36 @@ ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 
+# ════════════════════════════════════════
 # Memory management
+# ════════════════════════════════════════
 persist.sys.minfree_def=73728,92160,110592,340000,510000,645120
 persist.sys.minfree_6g=73728,92160,110592,340000,1282868,1677312
 persist.sys.minfree_8g=73728,92160,110592,340000,1677312,2064384
 
+# ════════════════════════════════════════
 # Netflix
+# ════════════════════════════════════════
 ro.netflix.bsp_rev=MTK6789-35965-1
 
+# ════════════════════════════════════════
 # Neural networks
+# ════════════════════════════════════════
 ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_baseline_support=1
 
+# ════════════════════════════════════════
 # Platform
+# ════════════════════════════════════════
 ro.vendor.mediatek.platform=MT6789
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp2-cs1
 ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp2-cs1-xm.V1.0.13_xiaomi.s0mp1.k6789v1.64_P129
 ro.vendor.mgvi_name=mihal
 
+# ════════════════════════════════════════
 # PQ
+# ════════════════════════════════════════
 ro.vendor.mtk_pq_color_mode=1
 ro.vendor.mtk_pq_support=2
 ro.vendor.pq.mtk_aal_support=1
@@ -180,7 +222,9 @@ ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_ultra_resolution_support=0
 ro.vendor.pq.mtk_video_transition=0
 
+# ════════════════════════════════════════
 # Radio
+# ════════════════════════════════════════
 persist.radio.multisim.config=dsds
 persist.vendor.ims_support=1
 persist.vendor.md_c2k_cap_dep_check=0
@@ -242,10 +286,14 @@ ro.vendor.wfd.iframesize.level=0
 telephony.active_modems.max_count=2
 telephony.lteOnCdmaDevice=1
 
+# ════════════════════════════════════════
 # Sensor
+# ════════════════════════════════════════
 ro.vendor.mtk.sensor.support=yes
 
+# ════════════════════════════════════════
 # Surfaceflinger
+# ════════════════════════════════════════
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=0
@@ -269,19 +317,25 @@ ro.surface_flinger.supports_background_blur=0
 ro.surface_flinger.uclamp.min=150
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
+# ════════════════════════════════════════
 # Storage
+# ════════════════════════════════════════
 external_storage.casefold.enabled=1
 external_storage.projid.enabled=1
 external_storage.sdcardfs.enabled=0
 ro.vendor.mtk_emmc_support=1
 ro.vendor.mtk_f2fs_enable=1
 
+# ════════════════════════════════════════
 # TEE
+# ════════════════════════════════════════
 ro.vendor.mtk_microtrust_tee_support=1
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_tee_gp_support=1
 
+# ════════════════════════════════════════
 # Wi-Fi
+# ════════════════════════════════════════
 ro.hardware.wlan.dbs=0
 ro.telephony.iwlan_operation_mode=AP-assisted
 ro.vendor.wifi.sap.concurrent.iface=ap1
@@ -290,8 +344,12 @@ ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m_6789
 ro.vendor.wlan.standalone.log=y
 
+# ════════════════════════════════════════
 # Wi-Fi Display
+# ════════════════════════════════════════
 ro.vendor.mtk_wfd_support=1
 
+# ════════════════════════════════════════
 # Dex2oat
+# ════════════════════════════════════════
 pm.dexopt.bg-dexopt=everything

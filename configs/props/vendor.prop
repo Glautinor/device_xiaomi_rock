@@ -134,7 +134,7 @@ ro.hardware.kmsetkey=beanpod
 # ════════════════════════════════════════
 # Low Memory Killer Daemon (LMKD)
 # ════════════════════════════════════════
-ro.lmk.log_stats=true
+ro.lmk.log_stats=false
 ro.lmk.psi_complete_stall_ms=35
 ro.lmk.psi_partial_stall_ms=35
 ro.lmk.swap_util_max=100
@@ -152,6 +152,13 @@ ro.lmk.kill_heaviest_task=true
 ro.lmk.use_minfree_levels=true
 
 # ════════════════════════════════════════
+# Memory management
+# ════════════════════════════════════════
+persist.sys.minfree_def=73728,92160,110592,340000,510000,645120
+persist.sys.minfree_6g=73728,92160,110592,340000,1282868,1677312
+persist.sys.minfree_8g=73728,92160,110592,340000,1677312,2064384
+
+# ════════════════════════════════════════
 # Media
 # ════════════════════════════════════════
 debug.stagefright.c2inputsurface=-1
@@ -163,13 +170,6 @@ ro.vendor.mtk.c2.vdec.fmt.support.level=1
 ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 vendor.mtk.vdec.waitkeyframeforplay=9
-
-# ════════════════════════════════════════
-# Memory management
-# ════════════════════════════════════════
-persist.sys.minfree_def=73728,92160,110592,340000,510000,645120
-persist.sys.minfree_6g=73728,92160,110592,340000,1282868,1677312
-persist.sys.minfree_8g=73728,92160,110592,340000,1677312,2064384
 
 # ════════════════════════════════════════
 # Netflix

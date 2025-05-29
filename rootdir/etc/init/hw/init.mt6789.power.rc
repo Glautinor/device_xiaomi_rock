@@ -56,7 +56,7 @@ on init
     # dex2oat tasks
     write /dev/cpuctl/dex2oat/cpu.uclamp.latency_sensitive 0
     write /dev/cpuctl/dex2oat/cpu.uclamp.max 80
-    write /dev/cpuctl/dex2oat/cpu.uclamp.min 0
+    write /dev/cpuctl/dex2oat/cpu.uclamp.min 10
     write /dev/cpuctl/dex2oat/cpu.shares 2048
 
     # Foreground tasks

@@ -10,3 +10,6 @@ type version_info, fs_type, sysfs_type;
 
 # Audio
 type vendor_sia_mode, fs_type, sysfs_type;
+
+# Sysfs audio vmax
+type sysfs_audio_vmax, sysfs_type, fs_type;

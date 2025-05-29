@@ -26,3 +26,6 @@
 /sys/devices/virtual/touch/touch_dev/panel_vendor       u:object_r:version_info:s0
 /sys/devices/virtual/touch/touch_dev/touch_vendor       u:object_r:version_info:s0
 /sys/devices/virtual/touch/touch_dev/panel_display      u:object_r:version_info:s0
+
+# Sysfs audio vmax
+/sys/devices/platform/soc/1101a000\.i2c/i2c-6/6-0058/vmax u:object_r:sysfs_audio_vmax:s0

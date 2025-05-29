@@ -5,7 +5,7 @@ on init
     write /dev/cpuset/background/cpus 0-1
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/restricted/cpus 0-2
+    write /dev/cpuset/restricted/cpus 0-1
 
     # VM Tweaks
     write /proc/sys/vm/dirty_writeback_centisecs 250
@@ -43,9 +43,9 @@ on init
     write /dev/cpuctl/background/cpu.shares 1024
     write /dev/cpuctl/system-background/cpu.shares 2048
     write /dev/cpuctl/background/cpu.uclamp.min 0
-    write /dev/cpuctl/background/cpu.uclamp.max 25
-    write /dev/cpuctl/system-background/cpu.uclamp.min 0
-    write /dev/cpuctl/system-background/cpu.uclamp.max 50
+    write /dev/cpuctl/background/cpu.uclamp.max 50
+    write /dev/cpuctl/system-background/cpu.uclamp.min 10
+    write /dev/cpuctl/system-background/cpu.uclamp.max 80
 
     # Camera daemon tasks
     write /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive 1

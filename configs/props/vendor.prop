@@ -1,4 +1,32 @@
 # ════════════════════════════════════════
+# Android & Kernel
+# ════════════════════════════════════════
+logcat.live=false
+debug.performance.tuning=true
+persist.sys.purgeable_assets=true
+persist.sys.ambient_display.enabled=true
+persist.sensor.motion.disable=true
+ro.vendor.sleep.state=deep
+device_idle.force_idle=true
+device_idle.light_enabled=true
+device_idle.deep_enabled=true
+
+# ════════════════════════════════════════
+# Zygote (App launch &GL preload)
+# ════════════════════════════════════════
+persist.zygote.preload_threads=4
+ro.zygote.disable_gl_preload=false
+ro.zygote.preload.enable=true
+ro.zygote.preload.disable=false
+
+# ════════════════════════════════════════
+# MTK
+# ════════════════════════════════════════
+ro.mtk_perf_fast_start_win=true
+ro.mtk_perf_response_time=true
+ro.mtk_perf_simple_start_win=true
+
+# ════════════════════════════════════════
 # AAL
 # ════════════════════════════════════════
 ro.vendor.mtk_aal_support=1
@@ -33,6 +61,7 @@ ro.vendor.bluetooth.defaultabsvol=false
 # ════════════════════════════════════════
 # Camera
 # ════════════════════════════════════════
+persist.vendor.camera.HAL3.enabled=true
 camera.disable_zsl_mode=1
 persist.vendor.camera3.pipeline.bufnum.base.imgo=4
 persist.vendor.camera3.pipeline.bufnum.base.lcso=4
@@ -103,6 +132,13 @@ ro.hardware.gatekeeper=beanpod
 # ════════════════════════════════════════
 # Graphics
 # ════════════════════════════════════════
+hw3d.force=true
+persist.sys.ui.hw=true
+hwui.disable_vsync=false
+debug.egl.swapinterval=true
+ro.config.enable.hw_accel=true
+persist.sys.use_dithering=false
+persist.sys.ui.render_mode=true
 debug.graphics.game_default_frame_rate.disabled=true
 graphics.gpu.profiler.support=true
 ro.hardware.egl=meow
@@ -156,6 +192,7 @@ persist.sys.minfree_6g=16384,20480,32768,131072,225280,286720
 # ════════════════════════════════════════
 # Media
 # ════════════════════════════════════════
+video.accelerate.hw=true
 debug.stagefright.c2inputsurface=-1
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
@@ -334,6 +371,7 @@ debug.sf.earlyGl.app.duration=19000000
 debug.sf.hwc.min.duration=22000000
 ro.surface_flinger.wcg_composition_dataspace=143261696
 # ═══════════════ Blur Handler ═══════════════
+ro.config.low_ram=false
 ro.launcher.blur.appLaunch=false
 ro.surface_flinger.supports_background_blur=false
 ro.sf.blurs_are_expensive=true

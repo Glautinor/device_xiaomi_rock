@@ -169,6 +169,7 @@ ro.hardware.kmsetkey=beanpod
 # ════════════════════════════════════════
 # Low Memory Killer Daemon (LMKD)
 # ════════════════════════════════════════
+ro.lmk.debug=false
 ro.lmk.log_stats=false
 ro.lmk.use_psi=true
 ro.lmk.psi_complete_stall_ms=100
@@ -178,13 +179,16 @@ ro.lmk.swap_free_low_percentage=0
 ro.lmk.thrashing_limit=100
 ro.lmk.thrashing_limit_decay=10
 ro.lmk.low=1001
-ro.lmk.medium=750
-ro.lmk.critical=250
+ro.lmk.medium=800
+ro.lmk.critical=100
+ro.lmk.thrashing_min_score_adj=0
 ro.lmk.critical_upgrade=false
 ro.lmk.upgrade_pressure=100
 ro.lmk.downgrade_pressure=100
 ro.lmk.kill_timeout_ms=100
-ro.lmk.kill_heaviest_task=false
+ro.lmk.kill_heavy_bg=true
+ro.lmk.kill_heaviest_task=true
+ro.lmk.enhance_batch_kill=true
 ro.lmk.use_minfree_levels=true
 persist.sys.minfree_def=16384,20480,32768,98304,131072,189440
 persist.sys.minfree_6g=16384,20480,32768,131072,225280,286720

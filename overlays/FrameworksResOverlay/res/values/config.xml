@@ -287,5 +287,5 @@
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/usb/quick_charge_type;1</string>
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
-    <bool name="config_zramWriteback">true</bool>
+    <bool name="config_zramWriteback">false</bool>
 </resources>

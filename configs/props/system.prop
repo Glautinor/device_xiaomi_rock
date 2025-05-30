@@ -17,10 +17,11 @@ vendor.rild.libpath=mtk-ril.so
 vendor.rild.libargs=-d /dev/ttyC0
 
 # ════════════════════════════════════════
-# Dexopt
+# Dex/Oat Compilation Tunning
 # ════════════════════════════════════════
 dalvik.vm.dex2oat64.enabled=true
 pm.dexopt.install=speed-profile
+pm.dexopt.shared=speed-profile
 pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.boot=verify
 pm.dexopt.first-boot=verify
@@ -31,6 +32,9 @@ dalvik.vm.boot-dex2oat-cpu-set=2,3,4,5
 dalvik.vm.boot-dex2oat-threads=4
 dalvik.vm.image-dex2oat-cpu-set=2,3,4,5
 dalvik.vm.image-dex2oat-threads=4
+persist.sys.dalvik.multithread=true
+dalvik.vm.systemuicompilerfilter=speed-profile
+dalvik.vm.systemservercompilerfilter=speed-profile
 
 # ════════════════════════════════════════
 # GPU

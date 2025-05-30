@@ -54,13 +54,6 @@ persist.dbg.wfc_avail_ovr=1
 ro.kernel.zio=38,108,105,16
 
 # ════════════════════════════════════════
-# zram writeback
-# ════════════════════════════════════════
-ro.zram.mark_idle_delay_mins=60
-ro.zram.first_wb_delay_mins=1440
-ro.zram.periodic_wb_delay_hours=24
-
-# ════════════════════════════════════════
 # USB
 # ════════════════════════════════════════
 ro.sys.usb.mtp.whql.enable=0

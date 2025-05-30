@@ -112,4 +112,4 @@ vendor_dlkm /vendor_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount
 
 /dev/block/by-name/vbmeta /vbmeta emmc defaults defaults
 
-/dev/block/zram0 none swap defaults zramsize=70%,zram_loopback_path=/data/unencrypted/zram_swap,zram_loopback_size=30%
+/dev/block/zram0 none swap defaults zramsize=70%

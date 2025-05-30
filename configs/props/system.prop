@@ -20,12 +20,12 @@ vendor.rild.libargs=-d /dev/ttyC0
 # Dex/Oat Compilation Tunning
 # ════════════════════════════════════════
 dalvik.vm.dex2oat64.enabled=true
-pm.dexopt.install=speed-profile
-pm.dexopt.shared=speed-profile
-pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.install=speed
+pm.dexopt.shared=speed
+pm.dexopt.bg-dexopt=speed
 pm.dexopt.boot=verify
 pm.dexopt.first-boot=verify
-pm.dexopt.ab-ota=speed-profile
+pm.dexopt.ab-ota=speed
 dalvik.vm.dex2oat-cpu-set=2,3,4,5
 dalvik.vm.dex2oat-threads=4
 dalvik.vm.boot-dex2oat-cpu-set=2,3,4,5
@@ -34,7 +34,7 @@ dalvik.vm.image-dex2oat-cpu-set=2,3,4,5
 dalvik.vm.image-dex2oat-threads=4
 persist.sys.dalvik.multithread=true
 #dalvik.vm.systemuicompilerfilter=speed
-dalvik.vm.systemservercompilerfilter=speed-profile
+dalvik.vm.systemservercompilerfilter=speed
 
 # ════════════════════════════════════════
 # GPU

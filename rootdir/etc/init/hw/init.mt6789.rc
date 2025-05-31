@@ -101,6 +101,17 @@ on post-fs-data
     write /proc/sys/vm/page-cluster 0
     write /proc/sys/vm/swappiness 160
     write /sys/kernel/mm/swap/vma_ra_enabled false
+    #zram writeback
+    chown root system /sys/block/zram0/idle
+    chmod 0664 /sys/block/zram0/idle
+
+    chown root system /sys/block/zram0/writeback
+    chmod 0664 /sys/block/zram0/writeback
+
+    chown root system /sys/block/zram0/writeback_limit_enable
+    chmod 0664 /sys/block/zram0/writeback_limit_enable
+    chown root system /sys/block/zram0/writeback_limit
+    chmod 0664 /sys/block/zram0/writeback_limit
 
     # boot time fs tune
     write /sys/block/mmcblk0/queue/iostats 0
@@ -688,6 +699,11 @@ on property:sys.boot_completed=1
 
     # Enable zram
     swapon_all /vendor/etc/fstab.${ro.hardware}
+    # Enable writeback limit
+    write /sys/block/zram0/writeback_limit_enable 1
+    write /sys/block/zram0/writeback_limit 65536
+    # zRAM write back incompressible pages
+    write /sys/block/zram0/writeback incompressible
 
     # Media C2
     restart android-hardware-media-c2-hal-1-2

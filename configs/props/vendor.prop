@@ -375,7 +375,7 @@ debug.sf.earlyGl.app.duration=19000000
 debug.sf.hwc.min.duration=22000000
 ro.surface_flinger.wcg_composition_dataspace=143261696
 # ═══════════════ Blur Handler ═══════════════
-ro.config.low_ram=true
+ro.config.low_ram=false
 ro.launcher.blur.appLaunch=false
 ro.surface_flinger.supports_background_blur=false
 ro.sf.blurs_are_expensive=true

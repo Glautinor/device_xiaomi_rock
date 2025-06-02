@@ -1,0 +1,2 @@
+# Allow untrusted applications to read /proc/sys/vm/max_map_count
+allow untrusted_app proc_max_map_count:file read;

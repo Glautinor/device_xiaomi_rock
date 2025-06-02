@@ -199,7 +199,8 @@ ro.lmk.kill_heaviest_task=true
 ro.lmk.enhance_batch_kill=true
 ro.lmk.use_minfree_levels=true
 persist.sys.minfree_def=16384,20480,32768,98304,131072,189440
-persist.sys.minfree_6g=16384,20480,32768,131072,225280,286720
+persist.sys.minfree_4g=16384,20480,32768,98304,131072,189440
+persist.sys.minfree_6g=16384,20480,32768,98304,131072,189440
 
 # ════════════════════════════════════════
 # Media

@@ -704,6 +704,8 @@ on property:sys.boot_completed=1
  #   write /sys/block/zram0/writeback_limit 65536
     # zRAM write back incompressible pages
     write /sys/block/zram0/writeback incompressible
+    # minfree
+    setprop sys.lmk.minfree_levels 4096:0,5120:100,8192:200,24576:250,32768:900,47360:950
 
     # Media C2
     restart android-hardware-media-c2-hal-1-2

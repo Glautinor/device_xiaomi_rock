@@ -28,13 +28,13 @@ on init
 
 ## Utilization Clamping
     # Tuning
-    write /proc/sys/kernel/sched_util_clamp_min_rt_default 128
-    write /proc/sys/kernel/sched_util_clamp_min 128
+    write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
+    write /proc/sys/kernel/sched_util_clamp_min 0
 
     # Real-Time tasks
-    write /dev/cpuctl/rt/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/rt/cpu.uclamp.latency_sensitive 0
     write /dev/cpuctl/rt/cpu.uclamp.max max
-    write /dev/cpuctl/rt/cpu.uclamp.min 25
+    write /dev/cpuctl/rt/cpu.uclamp.min 0
     write /dev/cpuctl/rt/cpu.shares 20480
 
     # Background tasks for best efficiency
@@ -48,39 +48,39 @@ on init
     write /dev/cpuctl/system-background/cpu.uclamp.max 50
 
     # Camera daemon tasks
-    write /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive 0
     write /dev/cpuctl/camera-daemon/cpu.uclamp.max max
-    write /dev/cpuctl/camera-daemon/cpu.uclamp.min 25
+    write /dev/cpuctl/camera-daemon/cpu.uclamp.min 0
     write /dev/cpuctl/camera-daemon/cpu.shares 20480
 
     # dex2oat tasks
     write /dev/cpuctl/dex2oat/cpu.uclamp.latency_sensitive 0
     write /dev/cpuctl/dex2oat/cpu.uclamp.max max
-    write /dev/cpuctl/dex2oat/cpu.uclamp.min 25
+    write /dev/cpuctl/dex2oat/cpu.uclamp.min 0
     write /dev/cpuctl/dex2oat/cpu.shares 2048
 
     # Foreground tasks
     write /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive 0
     write /dev/cpuctl/foreground/cpu.uclamp.max max
-    write /dev/cpuctl/foreground/cpu.uclamp.min 25
+    write /dev/cpuctl/foreground/cpu.uclamp.min 0
     write /dev/cpuctl/foreground/cpu.shares 10240
 
     # Foreground window tasks
     write /dev/cpuctl/foreground_window/cpu.uclamp.latency_sensitive 0
-    write /dev/cpuctl/foreground_window/cpu.uclamp.min 25
+    write /dev/cpuctl/foreground_window/cpu.uclamp.min 0
     write /dev/cpuctl/foreground_window/cpu.uclamp.max max
     write /dev/cpuctl/foreground_window/cpu.shares 12288
 
     # NeuralNetwork API HAL tasks
-    write /dev/cpuctl/nnapi-hal/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/nnapi-hal/cpu.uclamp.latency_sensitive 0
     write /dev/cpuctl/nnapi-hal/cpu.uclamp.max max
-    write /dev/cpuctl/nnapi-hal/cpu.uclamp.min 25
+    write /dev/cpuctl/nnapi-hal/cpu.uclamp.min 0
     write /dev/cpuctl/nnapi-hal/cpu.shares 20480
 
     # Top app tasks
-    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
+    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 0
     write /dev/cpuctl/top-app/cpu.uclamp.max max
-    write /dev/cpuctl/top-app/cpu.uclamp.min 25
+    write /dev/cpuctl/top-app/cpu.uclamp.min 0
     write /dev/cpuctl/top-app/cpu.shares 20480
 
 on property:sys.boot_completed=1

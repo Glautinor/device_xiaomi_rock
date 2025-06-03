@@ -6,7 +6,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
                   AndroidAutoStubPrebuilt \
                   AmbientSensePrebuilt \
-		  CalendarGooglePrebuilt \
+#		  CalendarGooglePrebuilt \
 #		  Camera2 \
 #		  Chrome-Stub \
 #		  DeskClock \

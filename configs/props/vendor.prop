@@ -142,8 +142,6 @@ ro.hardware.gatekeeper=beanpod
 # ════════════════════════════════════════
 hw3d.force=true
 persist.sys.ui.hw=true
-hwui.disable_vsync=false
-debug.egl.swapinterval=true
 ro.config.enable.hw_accel=true
 persist.sys.use_dithering=false
 persist.sys.ui.render_mode=true
@@ -159,6 +157,9 @@ ro.vendor.mtk_ovl_bringup=0
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
+# ═══════════════ Screen Tearing ═══════════════
+hwui.disable_vsync=true
+debug.egl.swapinterval=false
 
 # ════════════════════════════════════════
 # GPS
@@ -349,8 +350,8 @@ debug.sf.multithreaded_present=true
 debug.sf.enable_adpf_cpu_hint=true
 persist.mm.enable.prefetch=true
 debug.sf.layer_caching_active_layer_timeout_ms=1500
-debug.sf.disable_client_composition_cache=true
-debug.sf.enable_layer_caching=false
+debug.sf.disable_client_composition_cache=false
+debug.sf.disable_backpressure=true
 debug.sf.enable_gl_backpressure=flase
 ro.surface_flinger.has_HDR_display=false
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
@@ -363,7 +364,6 @@ ro.sf.compbypass.enable=true
 persist.sys.surfaceflinger.idle_reduce_framerate_enable=true
 debug.sf.hw=true
 debug.sf.set_touch_timer_ms=100
-debug.sf.auto_latch_unsignaled=true
 debug.sf.enable_hwc_vds=true
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=true
@@ -383,6 +383,11 @@ debug.sf.earlyGl.sf.duration=19000000
 debug.sf.earlyGl.app.duration=19000000
 debug.sf.hwc.min.duration=22000000
 ro.surface_flinger.wcg_composition_dataspace=143261696
+# ═══════════════ Screen Tearing ═══════════════
+ro.surface_flinger.running_without_sync_framework=true
+debug.sf.latch_unsignaled=true
+debug.sf.auto_latch_unsignaled=true
+debug.sf.enable_layer_caching=false
 # ═══════════════ Blur Handler ═══════════════
 ro.config.low_ram=false
 ro.launcher.blur.appLaunch=false

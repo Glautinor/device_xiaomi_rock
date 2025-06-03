@@ -29,7 +29,7 @@ ro.mtk_perf_simple_start_win=true
 # ════════════════════════════════════════
 # zram writeback
 # ════════════════════════════════════════
-ro.zram.mark_idle_delay_mins=60
+ro.zram.mark_idle_delay_mins=15
 ro.zram.first_wb_delay_mins=360
 ro.zram.periodic_wb_delay_hours=6
 ro.zram.force_writeback=true
@@ -182,13 +182,13 @@ ro.lmk.log_stats=false
 ro.lmk.use_psi=true
 ro.lmk.psi_complete_stall_ms=35
 ro.lmk.psi_partial_stall_ms=35
-ro.lmk.swap_util_max=75
-ro.lmk.swap_free_low_percentage=25
+ro.lmk.swap_util_max=100
+ro.lmk.swap_free_low_percentage=10
 ro.lmk.thrashing_limit=30
 ro.lmk.thrashing_limit_decay=50
 ro.lmk.low=1001
 ro.lmk.medium=800
-ro.lmk.critical=100
+ro.lmk.critical=0
 ro.lmk.thrashing_min_score_adj=0
 ro.lmk.critical_upgrade=false
 ro.lmk.upgrade_pressure=100

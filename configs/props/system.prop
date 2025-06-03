@@ -34,8 +34,8 @@ dalvik.vm.boot-dex2oat-threads=4
 dalvik.vm.image-dex2oat-cpu-set=2,3,4,5
 dalvik.vm.image-dex2oat-threads=4
 persist.sys.dalvik.multithread=true
-#dalvik.vm.systemuicompilerfilter=speed-profile
-#dalvik.vm.systemservercompilerfilter=speed-profile
+dalvik.vm.systemuicompilerfilter=speed-profile
+dalvik.vm.systemservercompilerfilter=speed-profile
 
 # ════════════════════════════════════════
 # GPU

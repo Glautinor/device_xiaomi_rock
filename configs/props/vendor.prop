@@ -3,7 +3,6 @@
 # ════════════════════════════════════════
 logcat.live=false
 debug.performance.tuning=true
-persist.sys.purgeable_assets=true
 persist.sys.ambient_display.enabled=true
 persist.sensor.motion.disable=true
 ro.vendor.sleep.state=deep
@@ -402,7 +401,6 @@ debug.sf.enable_layer_caching=false
 #ro.sf.blurs_are_expensive=true
 #persist.sys.sf.disable_blurs=true
 #persist.sysui.disableBlur=false
-#ro.config.avoid_gfx_accel=false
 
 # ════════════════════════════════════════
 # Storage

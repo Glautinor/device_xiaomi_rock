@@ -45,7 +45,7 @@ persist.vendor.sensor.cali_sensor=111001100000000
 # ═══════════════ Memory Optimization ═══════════════
 ro.config.dha_cached_min=4
 ro.config.dha_cached_max=16
-persist.device_config.activity_manager.use_compaction=true
+#persist.device_config.activity_manager.use_compaction=true
 ro.config.art_lowmem=true
 
 # ═══════════════ Earphone Jacks ═══════════════

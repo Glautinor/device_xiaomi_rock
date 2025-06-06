@@ -5,7 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/rock
-KERNEL_PATH := device/xiaomi/rock-kernel
+KERNEL_PATH := kernel/xiaomi/rock
 
 # Architecture
 TARGET_ARCH := arm64
@@ -75,7 +75,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_NO_KERNEL_OVERRIDE := true
 
 # Workaround to make lineage's soong generator work
-TARGET_KERNEL_SOURCE := device/xiaomi/rock-kernel/kernel-headers
+TARGET_KERNEL_SOURCE := kernel/xiaomi/rock/kernel-headers
 
 LOCAL_KERNEL := $(KERNEL_PATH)/Image.gz
 PRODUCT_COPY_FILES += \

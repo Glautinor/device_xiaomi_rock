@@ -1,0 +1,9 @@
+{
+    "android_app": {
+        "name": "SettingsProviderOverlayRock",
+        "vendor": true,
+        "manifest": "AndroidManifest.xml",
+        "sdk_version": "current",
+        "resource_dirs": ["res"]
+    }
+}

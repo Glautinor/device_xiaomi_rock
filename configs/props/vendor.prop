@@ -29,8 +29,8 @@ ro.mtk_perf_simple_start_win=true
 # zram writeback
 # ════════════════════════════════════════
 ro.zram.mark_idle_delay_mins=15
-ro.zram.first_wb_delay_mins=360
-ro.zram.periodic_wb_delay_hours=6
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=3
 ro.zram.force_writeback=true
 
 # ════════════════════════════════════════

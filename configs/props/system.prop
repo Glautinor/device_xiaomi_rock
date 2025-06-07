@@ -29,7 +29,7 @@ vendor.hbm.enable=true
 persist.vendor.dc_backlight.enable=false
 persist.vendor.power.dfps.level=0
 vendor.displayfeature.entry.enable=true
-persist.sys.brightness.low.gamma=true
+#persist.sys.brightness.low.gamma=true
 
 # ═══════════════ Thermal ═══════════════
 vendor.sys.thermal.data.path=/data/vendor/thermal/
@@ -45,7 +45,8 @@ persist.vendor.sensor.cali_sensor=111001100000000
 # ═══════════════ Memory Optimization ═══════════════
 ro.config.dha_cached_min=4
 ro.config.dha_cached_max=16
-#persist.device_config.activity_manager.use_compaction=true
+ro.config.max_starting_bg=16
+ro.sys.fw.bg_apps_limit=16
 ro.config.art_lowmem=true
 
 # ═══════════════ Earphone Jacks ═══════════════

@@ -2,7 +2,7 @@
 
 sync
 
-sleep 180
+sleep 2
 
 echo 3 > /proc/sys/vm/drop_caches
 

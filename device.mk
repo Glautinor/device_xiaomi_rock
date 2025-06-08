@@ -330,7 +330,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FrameworksResOverlayRock \
     LineageSettingsOverlayRock \
-    SettingsProviderOverlayRock \
     SettingsResOverlayRock \
     SystemUIOverlayRock \
     TelephonyOverlayRock \

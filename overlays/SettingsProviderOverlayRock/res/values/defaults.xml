@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="def_activity_manager_max_cached_processes">16</integer>
-
-    <bool name="def_activity_manager_use_compaction">true</bool>
-</resources>

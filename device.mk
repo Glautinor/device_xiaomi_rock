@@ -372,6 +372,7 @@ USE_DEX2OAT_DEBUG := false
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     TrebuchetQuickStep \
+    Launcher3QuickStep \
     Settings \
     PrebuiltGmsCore \
     GoogleServicesFramework \

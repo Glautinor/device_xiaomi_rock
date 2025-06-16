@@ -1,4 +1,73 @@
 # ════════════════════════════════════════
+# picasso09
+# ════════════════════════════════════════
+
+# ═══════════════ ADB ═══════════════
+persist.adb.nonblocking_ffs=0
+# ═══════════════ Stock Stuff ═══════════════
+ro.vendor.rc=/vendor/etc/init/hw/
+# ═══════════════ AEE ═══════════════
+ro.vendor.have_aeev_feature=0
+ro.vendor.have_aee_feature=0
+# ═══════════════ Audio ═══════════════
+ro.vendor.audio.voice.change.version=2
+# ═══════════════ Camera ═══════════════
+#vendor.camera.mdp.dre.enable=0
+#vendor.camera.mdp.cz.enable=0
+# ═══════════════ Connectivity ═══════════════
+#persist.vendor.radio.mtk_ps3_rat=W/G
+#ro.vendor.num_md_protocol=3
+#ro.vendor.mtk_external_sim_only_slots=4
+# ═══════════════ Wifi ═══════════════
+ro.vendor.builtin_fm_antenna_support=1
+# ═══════════════ Display ═══════════════
+ro.vendor.composer_version=2.1
+ro.vendor.idle_fps=60
+# ═══════════════ FRP ═══════════════
+ro.frp.pst=/dev/block/by-name/frp
+# ═══════════════ Fingerprint ═══════════════
+ro.hardware.fp.sideCap=true
+# ═══════════════ SOC Props ═══════════════
+ro.soc.model=MT6789V/CD
+ro.soc.manufacturer=Mediatek
+# ═══════════════ Media ═══════════════
+persist.vendor.video.dfps.level=0
+ro.vendor.jpeg_decode_sw_opt=1
+# ═══════════════ Sensors ═══════════════
+persist.vendor.sensor.deviceorient=true
+persist.vendor.sensor.onetrack=true
+# ═══════════════ Logd ═══════════════
+ro.logd.kernel=false
+ro.logd.size=2M
+# ═══════════════ Netflix ═══════════════
+ro.netflix.signup=1
+# ═══════════════ Versions ═══════════════
+#ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp2-cs1-xm.V1.0.13_xiaomi.s0mp1.k6789v1.64_P123
+# ═══════════════ Mediatek ═══════════════
+ro.vendor.mgk_name=mikrn
+ro.vendor.mml.mtk_mml_support=0
+ro.vendor.mtk_blulight_def_support=1
+ro.vendor.mtk_config_max_dram_size=
+ro.vendor.mtk_mvpu_security_support=0
+ro.vendor.mtk_prefer_64bit_proc=0
+ro.vendor.mtk_slow_motion_support=1
+# ═══════════════ PQ ═══════════════
+#ro.vendor.pq.mtk_blulight_def_support=0
+#ro.vendor.pq.mtk_caltm_support=1
+#ro.vendor.pq.mtk_clearzoom_support=1
+#ro.vendor.pq.mtk_hfg_support=1
+ro.vendor.sdr2hdr.by.layer.support=false
+ro.vendor.standard.video.enable=false
+# ═══════════════ NN ═══════════════
+debug.mtk_tflite.target_nnapi=29
+# ═══════════════ IncrementalFS ═══════════════
+ro.incremental.enable=yes
+# ═══════════════ ConsumerIr ═══════════════
+ro.hardware.consumerir=common
+# ═══════════════ Display - Dynamic refresh rate ═══════════════
+vendor.display.idle_time=1100
+
+# ════════════════════════════════════════
 # Android & Kernel
 # ════════════════════════════════════════
 logcat.live=false
@@ -153,7 +222,6 @@ ro.hardware.vulkan=mali
 ro.opengles.version=196610
 ro.vendor.build.dont_use_vabc=true
 ro.vendor.mtk_ovl_bringup=0
-ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
 # ═══════════════ Screen Tearing ═══════════════
@@ -210,7 +278,6 @@ debug.stagefright.c2inputsurface=-1
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
 media.c2.dmabuf.padding=3072
-persist.vendor.md_c2k_cap_dep_check=0
 ro.vendor.mtk.c2.vdec.fmt.support.level=1
 ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
@@ -369,17 +436,17 @@ debug.sf.predict_hwc_composition_strategy=true
 debug.sf.use_phase_offsets_as_durations=true
 ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.use_color_management=true
-ro.surface_flinger.set_idle_timer_ms=1000
-ro.surface_flinger.set_touch_timer_ms=2500
+ro.surface_flinger.set_idle_timer_ms=1100
+ro.surface_flinger.set_touch_timer_ms=1500
 ro.surface_flinger.set_display_power_timer_ms=1000
-ro.surface_flinger.uclamp.min=0
+ro.surface_flinger.uclamp.min=128
 debug.sf.treat_170m_as_sRGB=true
-debug.sf.late.sf.duration=29000000
-debug.sf.late.app.duration=22000000
-debug.sf.early.sf.duration=28000000
-debug.sf.early.app.duration=22000000
-debug.sf.earlyGl.sf.duration=29000000
-debug.sf.earlyGl.app.duration=22000000
+debug.sf.late.sf.duration=29100000
+debug.sf.late.app.duration=21500000
+debug.sf.early.sf.duration=29100000
+debug.sf.early.app.duration=21500000
+debug.sf.earlyGl.sf.duration=29100000
+debug.sf.earlyGl.app.duration=21500000
 debug.sf.hwc.min.duration=25000000
 debug.sf.high_fps.late.sf.duration=15000000
 debug.sf.high_fps.late.app.duration=12000000

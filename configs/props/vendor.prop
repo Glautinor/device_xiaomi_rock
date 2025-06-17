@@ -3,7 +3,7 @@
 # ════════════════════════════════════════
 
 # ═══════════════ ADB ═══════════════
-persist.adb.nonblocking_ffs=0
+persist.adb.nonblocking_ffs=1
 # ═══════════════ Stock Stuff ═══════════════
 ro.vendor.rc=/vendor/etc/init/hw/
 # ═══════════════ AEE ═══════════════
@@ -11,18 +11,11 @@ ro.vendor.have_aeev_feature=0
 ro.vendor.have_aee_feature=0
 # ═══════════════ Audio ═══════════════
 ro.vendor.audio.voice.change.version=2
-# ═══════════════ Camera ═══════════════
-#vendor.camera.mdp.dre.enable=0
-#vendor.camera.mdp.cz.enable=0
-# ═══════════════ Connectivity ═══════════════
-#persist.vendor.radio.mtk_ps3_rat=W/G
-#ro.vendor.num_md_protocol=3
-#ro.vendor.mtk_external_sim_only_slots=4
 # ═══════════════ Wifi ═══════════════
 ro.vendor.builtin_fm_antenna_support=1
 # ═══════════════ Display ═══════════════
 ro.vendor.composer_version=2.1
-ro.vendor.idle_fps=60
+ro.vendor.idle_fps=30
 # ═══════════════ FRP ═══════════════
 ro.frp.pst=/dev/block/by-name/frp
 # ═══════════════ Fingerprint ═══════════════
@@ -31,18 +24,16 @@ ro.hardware.fp.sideCap=true
 ro.soc.model=MT6789V/CD
 ro.soc.manufacturer=Mediatek
 # ═══════════════ Media ═══════════════
-persist.vendor.video.dfps.level=0
-ro.vendor.jpeg_decode_sw_opt=1
+persist.vendor.video.dfps.level=1
+ro.vendor.jpeg_decode_sw_opt=0
 # ═══════════════ Sensors ═══════════════
 persist.vendor.sensor.deviceorient=true
 persist.vendor.sensor.onetrack=true
 # ═══════════════ Logd ═══════════════
 ro.logd.kernel=false
-ro.logd.size=2M
+ro.logd.size=256K
 # ═══════════════ Netflix ═══════════════
 ro.netflix.signup=1
-# ═══════════════ Versions ═══════════════
-#ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp2-cs1-xm.V1.0.13_xiaomi.s0mp1.k6789v1.64_P123
 # ═══════════════ Mediatek ═══════════════
 ro.vendor.mgk_name=mikrn
 ro.vendor.mml.mtk_mml_support=0
@@ -52,20 +43,14 @@ ro.vendor.mtk_mvpu_security_support=0
 ro.vendor.mtk_prefer_64bit_proc=0
 ro.vendor.mtk_slow_motion_support=1
 # ═══════════════ PQ ═══════════════
-#ro.vendor.pq.mtk_blulight_def_support=0
-#ro.vendor.pq.mtk_caltm_support=1
-#ro.vendor.pq.mtk_clearzoom_support=1
-#ro.vendor.pq.mtk_hfg_support=1
 ro.vendor.sdr2hdr.by.layer.support=false
-ro.vendor.standard.video.enable=false
-# ═══════════════ NN ═══════════════
-debug.mtk_tflite.target_nnapi=29
+ro.vendor.standard.video.enable=true
 # ═══════════════ IncrementalFS ═══════════════
 ro.incremental.enable=yes
 # ═══════════════ ConsumerIr ═══════════════
 ro.hardware.consumerir=common
 # ═══════════════ Display - Dynamic refresh rate ═══════════════
-vendor.display.idle_time=1100
+vendor.display.idle_time=1000
 
 # ════════════════════════════════════════
 # Android & Kernel

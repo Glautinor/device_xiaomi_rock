@@ -27,7 +27,7 @@ ro.sf.lcd_density=440
 sys.displayfeature_hidl=true
 vendor.hbm.enable=true
 persist.vendor.dc_backlight.enable=false
-persist.vendor.power.dfps.level=0
+persist.vendor.power.dfps.level=1
 vendor.displayfeature.entry.enable=true
 #persist.sys.brightness.low.gamma=true
 

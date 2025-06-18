@@ -699,9 +699,6 @@ on property:sys.boot_completed=1
 
     # Enable zram
     swapon_all /vendor/etc/fstab.${ro.hardware}
-    # cleaning script
-    chmod 0755 /system/bin/99-clean.sh
-    chown root shell /system/bin/99-clean.sh
     # Enable writeback limit
  #   write /sys/block/zram0/writeback_limit_enable 1
  #   write /sys/block/zram0/writeback_limit 65536

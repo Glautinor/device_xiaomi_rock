@@ -273,6 +273,8 @@ PRODUCT_COPY_FILES += \
 
 # Init scripts
 PRODUCT_PACKAGES += \
+    init.clean.sh \
+    init.cache.sh \
     init.insmod.sh \
     init.panel_info.sh \
     init.insmod.mtk.cfg \
@@ -391,7 +393,3 @@ $(call inherit-product, vendor/xiaomi/rock/rock-vendor.mk)
 # Remove Unwanted Packages
 PRODUCT_PACKAGES += \
     RemovePackages
-
-# Custom init.d script
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/bin/99-clean.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/99-clean.sh

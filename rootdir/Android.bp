@@ -4,6 +4,18 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+sh_binary {
+    name: "init.clean.sh",
+    src: "bin/init.clean.sh",
+    vendor: true
+}
+
+sh_binary {
+    name: "init.cache.sh",
+    src: "bin/init.cache.sh",
+    vendor: true
+}
+
 prebuilt_etc {
     name: "init.recovery.usb.rc",
     src: "etc/init.recovery.usb.rc",

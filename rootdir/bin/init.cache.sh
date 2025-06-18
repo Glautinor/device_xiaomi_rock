@@ -7,7 +7,7 @@ while true; do
   # Check if the current hour is 3 AM
   if [ "$current_hour" -eq 3 ]; then
     # Execute your script
-    sh /vendor/bin/init.cache.sh
+    device_config put activity_manager max_cached_processes 16
   fi
 
   # Wait for 1 hour before checking the time again

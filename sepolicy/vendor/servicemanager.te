@@ -1,0 +1,2 @@
+#picasso09
+binder_call(servicemanager, hal_sensors_default)

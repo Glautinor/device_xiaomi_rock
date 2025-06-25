@@ -13,3 +13,23 @@ type vendor_sia_mode, fs_type, sysfs_type;
 
 # Sysfs audio vmax
 type sysfs_audio_vmax, sysfs_type, fs_type;
+
+#picasso09
+# Graphics
+type vendor_sysfs_displayfeature, fs_type, sysfs_type;
+type sysfs_graphics, fs_type, sysfs_type;
+type vendor_sysfs_graphics, fs_type, sysfs_type;
+
+# Touch gestures
+type sysfs_tp_gesture, fs_type, sysfs_type;
+type touchfeature_device, dev_type;
+
+# NFC
+type lirc_device, dev_type;
+
+#TP
+type sysfs_tp_virtual_prox, fs_type, sysfs_type;
+
+# Audio
+type vendor_audio_prop, file_type;
+type vendor_aw87xxx_mode, fs_type, sysfs_type;

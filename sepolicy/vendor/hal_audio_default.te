@@ -6,3 +6,6 @@ allow hal_audio_default vendor_sia_mode:file r_file_perms;
 
 # Sysfs audio vmax
 allow hal_audio_default sysfs_audio_vmax:file { open read write };
+
+#picasso09
+#get_prop(hal_audio_default, vendor_audioserver_prop)

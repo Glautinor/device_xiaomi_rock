@@ -1,0 +1,2 @@
+#picasso09
+allow init sysfs_power_supply:file rw_file_perms;

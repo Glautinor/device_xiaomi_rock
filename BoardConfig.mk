@@ -209,3 +209,8 @@ include vendor/xiaomi/rock/BoardConfigVendor.mk
 
 # SurfaceFlinger
 TARGET_USE_AOSP_SURFACEFLINGER := true
+
+# Build system
+#BUILD_BROKEN_DUP_RULES := true
+#BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true

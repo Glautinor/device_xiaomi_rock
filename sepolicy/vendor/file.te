@@ -24,9 +24,6 @@ type vendor_sysfs_graphics, fs_type, sysfs_type;
 type sysfs_tp_gesture, fs_type, sysfs_type;
 type touchfeature_device, dev_type;
 
-# NFC
-type lirc_device, dev_type;
-
 #TP
 type sysfs_tp_virtual_prox, fs_type, sysfs_type;
 

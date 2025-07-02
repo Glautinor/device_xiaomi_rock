@@ -48,8 +48,6 @@
 # Info Device
 /sys/devices/virtual/touch/touch_dev/panel_color                                    u:object_r:version_info:s0
 /sys/devices/virtual/touch/touch_dev/palm_sensor                                    u:object_r:sysfs_tp_virtual_prox:s0
-# IR
-/dev/lirc0                                                                          u:object_r:lirc_device:s0
 
 # Fingerprint
 /mnt/vendor/persist/goodix(/.*)?                                                    u:object_r:vendor_fingerprint_data_file:s0
